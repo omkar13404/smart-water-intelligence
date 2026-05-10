@@ -69,14 +69,25 @@ anomaly_model = pickle.load(
 # LOAD DATA
 # -----------------------------------
 
+DATA_DIR = os.path.join(
+    BASE_DIR,
+    "..",
+    "data"
+)
+
 df = pd.read_csv(
-    "../data/smart_water_dataset.csv"
+    os.path.join(
+        DATA_DIR,
+        "smart_water_dataset.csv"
+    )
 )
 
 forecast_df = pd.read_csv(
-    "../data/forecast_results.csv"
+    os.path.join(
+        DATA_DIR,
+        "forecast_results.csv"
+    )
 )
-
 # -----------------------------------
 # TITLE
 # -----------------------------------
