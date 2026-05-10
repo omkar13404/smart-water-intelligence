@@ -68,6 +68,30 @@ smart-water-intelligence/
 └── README.md
 
 ---
+## Dashboard Preview
+
+![Dashboard](assets/dashboard.png)
+
+## Forecasting
+
+![Forecast](assets/forecast.png)
+
+## Anomalies Alerts 
+
+![Anomalies](assets/alerts.png)
+
+## Analytics Graph 
+
+![Analytics](assets/analytics.png)
+
+## KPI Cards
+
+![KPIcards](assets/kpicards.png)
+
+## Live Demo
+
+Streamlit App:
+https://smart-water-intelligence-ete4hh38czcgutzh7k8tya.streamlit.app/
 
 ## Run Locally
 
