@@ -22,18 +22,48 @@ st.set_page_config(
 # -----------------------------------
 # LOAD MODELS
 # -----------------------------------
+import os
+
+BASE_DIR = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+MODEL_DIR = os.path.join(
+    BASE_DIR,
+    "..",
+    "models"
+)
 
 collection_model = pickle.load(
-    open("../models/collection_model.pkl", "rb")
+    open(
+        os.path.join(
+            MODEL_DIR,
+            "collection_model.pkl"
+        ),
+        "rb"
+    )
 )
 
 overflow_model = pickle.load(
-    open("../models/overflow_model.pkl", "rb")
+    open(
+        os.path.join(
+            MODEL_DIR,
+            "overflow_model.pkl"
+        ),
+        "rb"
+    )
 )
 
 anomaly_model = pickle.load(
-    open("../models/anomaly_model.pkl", "rb")
+    open(
+        os.path.join(
+            MODEL_DIR,
+            "anomaly_model.pkl"
+        ),
+        "rb"
+    )
 )
+
 
 # -----------------------------------
 # LOAD DATA
